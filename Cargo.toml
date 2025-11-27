@@ -1,0 +1,18 @@
+[package]
+name = "ubost"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+# make rust-analyzer shut up
+[[bin]]
+name = "ubost"
+test = false
+bench = false
+
+[dependencies]
